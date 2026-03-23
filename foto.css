@@ -1,0 +1,318 @@
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 12rem);
+    padding: 23px;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: rgb(111, 111, 111);
+    /* background: linear-gradient(to bottom, #0000FF, #6495ED, #00FFFF); */
+}
+
+.article{
+    width: 12rem;
+    /* justify-content: space-between; */
+    gap: 10px;
+    padding: 10px;
+    /* border: 1px soli white; */
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 0 0 15px white;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.article img{
+    width: 9rem;
+    border-radius: 5px;
+}
+
+.container h3{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.ketua{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    /* background-color: white;
+    width: 400px; */
+    /* margin-top: 20px;
+    margin-left: 20rem;
+    margin-right: 20rem; */
+}
+
+.ketuakelas{
+    width: 12rem;
+    padding: 9px;
+    /* border: 1px solid rgb(212, 212, 212); */
+    /* background-color: rgb(255, 0, 0); */
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.textketua h1{
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ketuakelas img{
+    width: 9rem;
+    border-radius: 5px;
+}
+
+.struk{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #000000;
+    box-shadow: 0 0 15px black;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.fotokita{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    background-color: #000000;
+    color: white;
+    margin-right: 25rem;
+    margin-left: 25rem;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #bababa;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    background: linear-gradient(to top, rgb(50, 50, 50), rgb(122, 118, 255), rgb(50, 50, 50));
+    font-weight: bold;
+    color: white;
+}
+
+.logo{
+    font-size: 1.1rem;
+    margin: .5rem;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.logo img{
+    padding: 14px;
+    width: 90px;
+    border-radius: 55px;
+    margin: 10px;
+}
+
+.navbar-link ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 70px;
+    gap: 10px;
+}
+
+.navbar-link li{
+    list-style: none;
+}
+
+.navbar-link li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-link li:hover{
+    background-color: #000000;
+    border-radius: 190px;
+    transition: all .3s ease-in-out;
+}
+
+.foto{
+    background-color: #000000;
+    border-radius: 190px;
+}
+
+@media (max-width: 720px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+        margin: .5rem;
+        font-weight: bold;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        /* display: flex; */
+        text-align: center;
+    }
+
+    .logo img{
+        width: 9rem;
+        border-radius: 200px;
+    }
+
+    .navbar-link li:hover{
+        border-radius: 190px;
+        transition: all .1s ease-in-out;
+        background-color: #000000;
+    }
+
+    .container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 10rem);
+        padding: 25px;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    .article{
+        width: 10rem;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: rgb(212, 212, 212);
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .article img{
+        width: 8rem;
+        border-radius: 5px;
+    }
+
+    .container h3{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+    }
+    
+
+    .ketuakelas img{
+        width: 8rem;
+        border-radius: 5px;
+    }
+
+    .ketua{
+        justify-content: center;
+        padding: 15px;
+        gap: 20px;
+        border-radius: 20px;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .ketuakelas{
+        padding: 1px;
+        border: 1px solid black;
+        background-color: rgb(212, 212, 212);
+        border-radius: 20px;
+        text-align: center;
+        width: 10rem;
+    }
+    .ketuakelas h4{
+        font-size: 15.5px;
+        font-weight: bolder;
+    }
+
+    .struk{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .fotokita{
+        font-size: 13px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .navbar-link ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 3rem;
+        margin: .5rem;
+        font-weight: bold;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img{
+        width:15rem;
+        border-radius: 200px;
+    }
+
+    .navbar-link ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    .navbar-link a{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .navbar-link li:hover{
+        border-radius: 190px;
+        transition: all .1s ease-in-out;
+        background-color: #000000;
+    }
+}

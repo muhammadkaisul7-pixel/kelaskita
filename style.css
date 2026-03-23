@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #bababa;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    background: linear-gradient(to top, rgb(50, 50, 50), rgb(122, 118, 255), rgb(50, 50, 50));
+    font-weight: bold;
+    color: white;
+}
+
+.logo{
+    font-size: 1.1rem;
+    margin: .5rem;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.logo img{
+    padding: 14px;
+    width: 90px;
+    border-radius: 55px;
+    margin: 10px;
+}
+
+.navbar-link ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 70px;
+    gap: 10px;
+}
+
+.navbar-link li{
+    list-style: none;
+}
+
+.navbar-link li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-link li:hover{
+    background-color: #000000;
+    border-radius: 190px;
+    transition: all .3s ease-in-out;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: -1px;
+}
+
+.article{
+    margin: 10px;
+    box-shadow: 0 0 30px blueviolet;
+    padding: 10px;
+    border: 10px solid black;
+    background-color: rgb(0, 0, 0);
+    border-radius: 70px;
+}
+
+.article h1{
+    text-align: center;
+    color: blueviolet;
+}
+
+.article p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.home{
+    background-color: #000000;
+    border-radius: 190px;
+}
+
+.anakhebat{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.indonesia{
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 0 15px blueviolet;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.kebiasaan{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    background-color: #909090;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.anak{
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 0 15px black, 0 0 13px silver;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 720px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+        margin: .5rem;
+        font-weight: bold;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img{
+        width: 9rem;
+        border-radius: 200px;
+    }
+
+    .navbar-link ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navbar-link li:hover{
+        border-radius: 190px;
+        transition: all .1s ease-in-out;
+        background-color: #000000;
+    }
+
+    .anakhebat{
+        padding: 20px;
+        margin: 0;
+    }
+
+    .indonesia{
+        font-size: 10px;
+        margin: 50px;
+        margin-top: 70px;
+        font-weight: bold;
+    }
+
+    .kebiasaan{
+        justify-content: center;
+        padding: 30px;
+        display: grid;
+        border-radius: 25px;
+        grid-template-columns: repeat(2, 160px);
+        font-size: 12px;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .anak p{
+        font-size: 15px;
+    }
+
+    .anak{
+        width: 160px;
+    }
+
+    .anak .masyarak{
+        font-size: 18px;
+    }
+
+    .anak .tidur{
+        font-size: 20px;
+    }
+
+    .anak .olahraga{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 3rem;
+        margin: .5rem;
+        font-weight: bold;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img{
+        width: 20rem;
+        border-radius: 500px;
+    }
+
+    .navbar-link ul{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        gap: 5rem;
+    }
+
+    .navbar-link a{
+        font-size: 40px;
+    }
+    
+    .navbar-link li:hover{
+        padding: 5px;
+        border-radius: 190px;
+        transition: all .1s ease-in-out;
+        background-color: #000000;
+    }
+
+    .container{
+        margin: 20px;
+    }
+
+    .article{
+        font-size: 40px;
+    }
+
+    .article p{
+        font-size: 30px;
+    }
+
+    .anakhebat{
+        padding: 0px;
+        margin: 0;
+    }
+
+    .indonesia{
+        font-size: 27px;
+        margin: 40px;
+        margin-top: 50px;
+        font-weight: bold;
+        width: 800px;
+    }
+
+    .kebiasaan{
+        justify-content: center;
+        padding: 30px;
+        display: grid;
+        border-radius: 25px;
+        grid-template-columns: repeat(2, 450px);
+        font-size: 30px;
+        gap: 30px;
+    }
+
+    .anak p{
+        font-size: 30px;
+    }
+
+    .anak{
+        width: 450px;
+        border-radius: 80px;
+    }
+
+    /* .anak .masyarak{
+        font-size: 18px;
+    }
+
+    .anak .tidur{
+        font-size: 20px;
+    }
+
+    .anak .olahraga{
+        font-size: 22px;
+    } */
+}
