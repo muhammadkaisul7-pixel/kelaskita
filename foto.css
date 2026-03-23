@@ -294,25 +294,99 @@ body{
     }
 
     .logo img{
-        width:15rem;
-        border-radius: 200px;
+        width: 20rem;
+        border-radius: 500px;
     }
 
     .navbar-link ul{
-        margin: 0;
-        padding: 0;
+        margin: 10px;
+        padding: 10px;
         display: flex;
-        gap: 10px;
+        gap: 5rem;
     }
 
     .navbar-link a{
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: 40px;
     }
     
     .navbar-link li:hover{
+        padding: 5px;
         border-radius: 190px;
         transition: all .1s ease-in-out;
         background-color: #000000;
+    }
+
+    .container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 23rem);
+        padding: 50px;
+        gap: 30px;
+        border-radius: 10px;
+    }
+
+    .article{
+        width: 23rem;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: rgb(212, 212, 212);
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .article img{
+        margin-top: 20px;
+        width: 18rem;
+        border-radius: 5px;
+    }
+
+    .container h3{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+    }
+
+    .fotokita{
+        font-size: 28px;
+        margin-left: 100px;
+        margin-right: 100px;
+        border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    }
+
+    .ketuakelas img{
+        width: 20rem;
+        border-radius: 5px;
+    }
+
+    .ketua{
+        justify-content: center;
+        padding: 15px;
+        gap: 20px;
+        border-radius: 20px;
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .ketuakelas{
+        padding: 1px;
+        border: 1px solid black;
+        background-color: rgb(212, 212, 212);
+        border-radius: 20px;
+        text-align: center;
+        width: 25rem;
+    }
+    .ketuakelas h4{
+        font-size:30px;
+        font-weight: bolder;
+    }
+
+    .struk{
+        font-size: 23px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 }
